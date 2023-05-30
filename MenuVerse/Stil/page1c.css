@@ -1,0 +1,104 @@
+/* CSS Reset */
+
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    background-image: url('/Resim/bc5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu {
+    width: 200px;
+    background-color: #EFB300;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#menu ul {
+    margin-top: auto;
+    padding: 0;
+}
+
+#content {
+    margin-left: 200px;
+    height: 100vh;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul li a {
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    border-left: 5px solid #434949;
+}
+
+ul li a.active {
+    background-color: #434949;
+    border-left: 5px solid #f2b134;
+}
+
+ul li a:hover:not(.active) {
+    background-color: #434949;
+    border-left: 5px solid #f2b134;
+}
